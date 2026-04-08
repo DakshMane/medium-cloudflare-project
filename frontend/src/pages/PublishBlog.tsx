@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AppBar from '../components/AppBar';
 import axios from 'axios';
 import { BACKEND_URL } from '../config';
-import { data, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 // ✅ Moved outside component
 interface Post {
