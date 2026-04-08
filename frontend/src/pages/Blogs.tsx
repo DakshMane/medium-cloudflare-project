@@ -49,7 +49,7 @@ useEffect(() => {
                   author={blog.author}
                   title={blog.title}
                   content={blog.content}
-                  publishedAt={blog?.publishedDate}
+                  publishedAt={blog?.publishedDate || "08 April 2026"}
                 />
               ))}
           </div>
