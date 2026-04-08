@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { AvatarIcon } from './BlogCard'
 import { Link } from 'react-router-dom'
 

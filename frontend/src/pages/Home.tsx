@@ -31,52 +31,7 @@ const TRENDING = [
   },
 ];
 
-const ARTICLES = [
-  {
-    id: '1',
-    initials: 'AK',
-    color: { bg: '#dcfce7', text: '#166534' },
-    author: 'Arjun Kapoor',
-    date: 'Apr 8',
-    title: 'Building a full-stack blog with Cloudflare Workers, Prisma Accelerate & Neon DB',
-    excerpt:
-      'Serverless backends are no longer a compromise — here is how I built a production-ready app using edge compute, connection pooling, and a serverless Postgres database that costs almost nothing at idle.',
-    readTime: '8 min read',
-  },
-  {
-    id: '2',
-    initials: 'SR',
-    color: { bg: '#fef9c3', text: '#854d0e' },
-    author: 'Sneha Rao',
-    date: 'Apr 7',
-    title: 'Why your React app feels slow — and the cache fix that takes 20 lines',
-    excerpt:
-      'Most frontend slowness is not network latency — it is redundant fetches. A module-level Map with TTL logic is all you need to make page revisits feel instant without any extra library.',
-    readTime: '5 min read',
-  },
-  {
-    id: '3',
-    initials: 'PV',
-    color: { bg: '#ede9fe', text: '#5b21b6' },
-    author: 'Priya Verma',
-    date: 'Apr 6',
-    title: 'Hono.js is the framework Cloudflare Workers deserved',
-    excerpt:
-      'Express-like ergonomics, zero overhead, and first-class support for CF Workers bindings. Here is why I switched and never looked back after my first deployed route worked perfectly.',
-    readTime: '6 min read',
-  },
-  {
-    id: '4',
-    initials: 'MT',
-    color: { bg: '#fee2e2', text: '#991b1b' },
-    author: 'Mihir Tawde',
-    date: 'Apr 4',
-    title: 'Neon DB review after 3 months in production',
-    excerpt:
-      'Branching like Git, scales to zero, and it is just Postgres. I ran it through real workloads — here is an honest breakdown of where it shines and where it simply does not.',
-    readTime: '7 min read',
-  },
-];
+
 
 const STAFF_PICKS = [
   {
@@ -123,20 +78,11 @@ const WHO_TO_FOLLOW = [
   },
 ];
 
-const TOPICS = [
-  'For you',
-  'Engineering',
-  'React',
-  'Serverless',
-  'Design',
-  'Database',
-  'AI',
-  'Career',
-];
+
 
 function Avatar({
   initials,
-  color,
+
   size = 24,
 }: {
   initials: string;
@@ -166,7 +112,7 @@ function Avatar({
 
 export default function Home() {
   const navigate = useNavigate();
-  const [activeTopic, setActiveTopic] = useState('For you');
+
 
   return (
     <div
