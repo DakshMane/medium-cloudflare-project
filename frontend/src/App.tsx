@@ -5,10 +5,12 @@ import Signup from './pages/Signup'
 import Blog from "./pages/Blog"
 import Blogs from './pages/Blogs'
 import  PublishBlog from './pages/PublishBlog'
+import Home from './pages/Home'
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={<Home/>}/>
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/blog/:id" element={<Blog />} />
