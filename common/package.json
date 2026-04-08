@@ -1,0 +1,16 @@
+{
+  "name": "@daksh_mane/common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "daksh_mane dakshspaceygeek@gmail.com",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.3.6"
+  }
+}
